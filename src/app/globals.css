@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+
+section.hero{
+    @apply block md:grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    
+}
+
+select,
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"]{
+    @apply block w-full mb-2 rounded-xl;
+    @apply border p-2 border-gray-300 bg-gray-100 ;
+}
+input[type="email"]:disabled,
+input[type="password"]:disabled,
+input[type="text"]:disabled,
+input[type="tel"]:disabled{
+    @apply bg-gray-200 border-0 text-gray-500 cursor-not-allowed;
+}
+label{
+    @apply text-gray-500  text-sm;
+}
+input[type="text"].inp{
+    @apply w-28;
+}
+label+input{
+    @apply -mt-0.5
+}
+
+button,.button{
+    @apply block w-full text-gray-700 font-bold;
+    @apply  text-lg border border-gray-300 rounded-xl p-2;
+    
+}
+button[type="submit"],.submit{
+    @apply  bg-primary text-white ;
+    @apply hover:bg-white hover:text-primary hover:border-gray-300 transition-all duration-300;
+}
+button[type="submit"]:disabled,.submit:disabled{
+    @apply cursor-not-allowed bg-red-400 text-white;
+}
+
+div.tabs>*{
+    @apply bg-gray-300 text-gray-700 px-4 py-2 rounded-full;
+}
+div.tabs>*.active{
+    @apply bg-primary text-white;
+}
+
+.scrollbar-hidden {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+.flying-button-parent button{
+    @apply mt-2 bg-primary border-0 text-white rounded-full px-8 py-2 hover:bg-white hover:text-primary transition-all duration-300
+}
