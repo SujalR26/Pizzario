@@ -8,9 +8,9 @@ export default function Hero(){
                 <h1 className="text-5xl font-semibold">Everything<br></br> is better<br/> with a <span className="text-primary">Pizza</span> </h1>
                 <p className="my-6 text-gray-500 font-medium text-sm">Every slice of pizza is like a celebration of life's little victories—a cheesy, saucy reward for just making it through the day.</p>
                 <div className="flex gap-4 text-sm">
-                    <button className="bg-primary uppercase flex gap-2 text-white px-4 py-2 rounded-full  items-center justify-center">Order now 
+                    <Link href={'/menu'} className="bg-primary uppercase flex gap-2 text-white px-4 py-2 rounded-full  items-center justify-center">Order now 
                         <Right></Right>
-                    </button>
+                    </Link>
                     <button className="text-gray-500 flex gap-2 py-2 rounded-full items-center border-0">Learn more <Right></Right></button>
                 </div>
             </div>
