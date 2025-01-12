@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Right from "../icons/Right";
+import Link from 'next/link'; 
 // import pizza from "../../../public/pizza.png"
 export default function Hero(){
     return (
